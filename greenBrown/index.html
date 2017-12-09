@@ -1,0 +1,139 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet"> 
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+<body class="container-fluid">
+    <div class="row">
+        <header>
+            <img class="logo" src="img/logo.png" alt="Logo"/>
+            <div class="login pull-right">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                <span>Hello Tarek!</span>
+            </div>
+            <div class="lang pull-right">
+                <a>EN</a> | <a>AR</a>
+            </div>
+            <nav class="navbar navbar-default pull-right">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#">Internal Bylaws</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Application</a></li>
+                <li><a href="#">Directory</a></li>
+                </ul>
+            </div>
+        </nav>
+        </header>
+    </div>
+    <div class="row">
+            <div class="homeBG"></div>
+    </div>
+    <div class="row">
+        <div class="about text-center" >
+            <div class="sectionTitle">About Us</div>
+            <div class="sectionContent">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus.
+            </div>
+            <a href="about.html"><button type="button" class="btn btn-primary">Learn More</button></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="featuredEvents">
+            <div class="container">
+                <div class="FEtitle">Featured Events</div>
+
+            <div id="eventsSlider" class="row carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                <div class="col-md-6 col-sm-12 pull-left eventItem item active">
+                    <img src="img/event1.png" />
+                    <div class="date">July 19 at 10:00 AM</div>
+                    <div class="title">Fundraiser Event for Local Farms</div>
+                    <div class="content">
+                        Lorem ipsum doloro sit amet is an international dummy text used globally to simulate the existence of text. It is a dummy text with strict design purposes.
+                    </div>
+                <button type="button" class="btn btn-primary">Learn More</button>
+                </div>
+            <div class="col-md-6 col-sm-12 pull-left eventItem item">
+                    <img src="img/event2.png" />
+                    <div class="date">January 5 at 10:00 AM</div>
+                    <div class="title">New Year, New Objectives</div>
+                    <div class="content">
+                        Lorem ipsum doloro sit amet is an international dummy text used globally to simulate the existence of text. It is a dummy text with strict design purposes.
+                    </div>
+                <button type="button" class="btn btn-primary">Learn More</button>
+            </div>
+          <!--  <div class="col-md-6 col-sm-12 pull-left eventItem item">
+                    <img src="img/event2.png" />
+                    <div class="date">January 5 at 10:00 AM</div>
+                    <div class="title">Test</div>
+                    <div class="content">
+                        Lorem ipsum doloro sit amet is an international dummy text used globally to simulate the existence of text. It is a dummy text with strict design purposes.
+                    </div>
+                <button type="button" class="btn btn-primary">Learn More</button>
+            </div> -->
+                                <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+                    </div>
+
+            </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="newsLetter text-center">
+            <div class="title">Subscribe to Our Newsletter</div>
+            <p class="content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+            </p>
+            <div class="newsLetterEmail">
+                <input class="emailField" type="text" placeholder="type your email here..." name="email"/>
+                <div class="submitIcon">
+                    <input class="submitArrow" type="submit" value=""/>
+                    <i class="fa fa-caret-right" aria-hidden="true"></i>
+                </div>
+            </div>
+            <ul class="social">
+                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+            </ul>
+            <div class="sep"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="contactUs text-center">
+            <div class="title">Didn’t Find What You’re Looking For?</div>
+            <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>
+            <form>
+                <input type="text" placeholder="Full Name" name="FullName"/>
+                <input type="text" placeholder="Email" name="Email"/>
+                <textarea rows="4" cols="50" placeholder="Type your message here..."></textarea>
+                <button type="button" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <footer>
+            <div class="pull-right">All Rights Reserved 2017.</div>
+        </footer>
+    </div>
+</body>
+</html>
