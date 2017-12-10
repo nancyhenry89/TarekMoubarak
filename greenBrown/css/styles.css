@@ -316,6 +316,7 @@ ul.social {
     font-style: italic;
     height: 120px;
     border: 0;
+    color:#fff
 }
 
 .contactUs button.btn.btn-primary {
@@ -532,4 +533,5 @@ input.emailField {
     margin: 0;
     flex-basis: auto;
 }
+.lang:before{display: none}
 }
