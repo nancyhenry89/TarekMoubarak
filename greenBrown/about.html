@@ -8,29 +8,32 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet"> 
     <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
 </head>
 <body class="container-fluid">
     <div class="row">
         <header>
-            <img class="logo" src="img/logo.png" alt="Logo"/>
+            <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo"/></a>
             <div class="login pull-right">
                 <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                 <span>Hello Tarek!</span>
             </div>
             <div class="lang pull-right">
-                <a>EN</a> | <a>AR</a>
+                <a href="#" class="active">EN</a> | <a href="#">AR</a>
             </div>
-            <nav class="navbar navbar-default pull-right">
-            <div class="container-fluid">
+            <nav class="navbar navbar-toggleable-md navbar-dark navbar-default pull-right">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div id="navbarNav" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                <li><a href="index.html">Home</a></li>
-                <li ><a href="#">Internal Bylaws</a></li>
-                <li class="active"><a href="about.html">About</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Application</a></li>
-                <li><a href="#">Directory</a></li>
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="#">Internal Bylaws</a></li>
+                <li class="nav-item active"><a href="about.html">About</a></li>
+                <li class="nav-item"><a href="#">Events</a></li>
+                <li class="nav-item"><a href="#">Application</a></li>
+                <li class="nav-item"><a href="#">Directory</a></li>
                 </ul>
             </div>
         </nav>
@@ -51,44 +54,48 @@
         <div class="boardMembers">
             <div class="container">
                 <div class="secTitle">Board Members</div>
-                <div class="col member">
-                    <img src="img/member1.png" alt="Board Member"/>
-                    <div class="title">CEO & Founder</div>
-                    <div class="name">John Travolta</div>
-                    <div class="bio">
-                        Lorem ipsum doloro text used globally toummy text.
+                <div id="membersSlider" class="slider row">
+                    <a id="prev" href="#"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+                    <a id="next" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                    <div class="col member">
+                        <img src="img/member1.png" alt="Board Member"/>
+                        <div class="title">CEO & Founder</div>
+                        <div class="name">John Travolta</div>
+                        <div class="bio">
+                            Lorem ipsum doloro text used globally toummy text.
+                        </div>
                     </div>
-                </div>
-                <div class="col member">
-                    <img src="img/member2.png" alt="Board Member"/>
-                    <div class="title">Managing Partner</div>
-                    <div class="name">Lorena Pavlov</div>
-                    <div class="bio">
-                        Lorem ipsum doloro text used globally toummy text.
+                    <div class="col member">
+                        <img src="img/member2.png" alt="Board Member"/>
+                        <div class="title">Managing Partner</div>
+                        <div class="name">Lorena Pavlov</div>
+                        <div class="bio">
+                            Lorem ipsum doloro text used globally toummy text.
+                        </div>
                     </div>
-                </div>
-                <div class="col member">
-                    <img src="img/member3.png" alt="Board Member"/>
-                    <div class="title">CTO & Co-Founder</div>
-                    <div class="name">Robert Pires</div>
-                    <div class="bio">
-                        Lorem ipsum doloro text used globally toummy text.
+                    <div class="col member">
+                        <img src="img/member3.png" alt="Board Member"/>
+                        <div class="title">CTO & Co-Founder</div>
+                        <div class="name">Robert Pires</div>
+                        <div class="bio">
+                            Lorem ipsum doloro text used globally toummy text.
+                        </div>
                     </div>
-                </div>
-                <div class="col member">
-                    <img src="img/member4.png" alt="Board Member"/>
-                    <div class="title">Head of Technology</div>
-                    <div class="name">Francois Chahine</div>
-                    <div class="bio">
-                        Lorem ipsum doloro text used globally toummy text.
+                    <div class="col member">
+                        <img src="img/member4.png" alt="Board Member"/>
+                        <div class="title">Head of Technology</div>
+                        <div class="name">Francois Chahine</div>
+                        <div class="bio">
+                            Lorem ipsum doloro text used globally toummy text.
+                        </div>
                     </div>
-                </div>
-                <div class="col member">
-                    <img src="img/member5.png" alt="Board Member"/>
-                    <div class="title">Marketing Manager</div>
-                    <div class="name">Becca Hajj</div>
-                    <div class="bio">
-                        Lorem ipsum doloro text used globally toummy text.
+                    <div class="col member">
+                        <img src="img/member5.png" alt="Board Member"/>
+                        <div class="title">Marketing Manager</div>
+                        <div class="name">Becca Hajj</div>
+                        <div class="bio">
+                            Lorem ipsum doloro text used globally toummy text.
+                        </div>
                     </div>
                 </div>
             </div>
