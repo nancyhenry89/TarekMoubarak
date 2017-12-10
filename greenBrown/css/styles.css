@@ -22,7 +22,7 @@ header{
 }
 .navbar li.active a {
     color: #20450e;
-    text-decoration: underline;
+    font-weight: bold;
 }
 .navbar a:hover {
     color: #20450e;
@@ -87,7 +87,7 @@ nav.navbar {
 }
 
 .about {
-    width: 80%;
+    width: 70%;
     margin: auto;
 }
 button.btn.btn-primary {
@@ -111,7 +111,6 @@ button.btn.btn-primary:hover{
     font-size: 17px;
     font-weight: bold;
     margin-bottom: 32px;
-    padding: 0px 15px;
 }
 
 .featuredEvents {
@@ -122,33 +121,34 @@ button.btn.btn-primary:hover{
 }
 .about {margin-bottom: 24px;}
 .featuredEvents .container {
-    width: 67%;
+    width: 70%;
     margin: 38px auto;
+    padding: 0;
 }
 
 .eventItem img {width: 95%;margin-bottom: 19px;}
 .eventItem .date {
     font-size: 12px;
-    padding-left: 8px;
+    /* padding-left: 8px; */
 }
 
 .eventItem .title {
-    padding-left: 8px;
+    /* padding-left: 8px; */
     margin-top: -3px;
     font-size: 17px;
 }
 
 .eventItem .content {
-    padding-left: 8px;
+    /* padding-left: 8px; */
     margin-top: 7px;
     line-height: 19px;
     font-size: 12px;
     color: #c1c1c1;
-    text-align: justify
+    text-align: justify;
 }
 
 .eventItem button.btn.btn-primary {
-    margin-left: 8px;
+    /* margin-left: 8px; */
     margin-top: 20px;
 }
 
@@ -198,7 +198,7 @@ input.submitArrow {
 }
 
 .newsLetterEmail {
-    width: 51%;
+    width: 50%;
     margin: auto;
     margin-top: 23px;
     height: 50px;
@@ -246,7 +246,7 @@ ul.social {
     margin-top: 107px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 38px;
+    margin-bottom: 18px;
 }
 .contactUs {
     width: 80%;
@@ -256,6 +256,7 @@ ul.social {
 .contactUs .title {
     font-weight: bold;
     font-size: 17px;
+    margin-top: 20px;
 }
 
 .contactUs .content {
@@ -278,6 +279,11 @@ ul.social {
     height: 49px;
     color: #fff;
     padding: 17px;
+}
+
+.contactUs input:focus,.contactUs textarea:focus {
+    outline: none;
+    background: #417d25;
 }
 
 .contactUs textarea {
@@ -335,4 +341,79 @@ footer {
 }
 .emailField:-moz-placeholder { /* Firefox 18- */
   color: #c1c1c1;
+}
+
+/*about*/
+.boardMembers .member {
+    float: left;
+    width: calc(20% - 10px);
+    margin: 5px;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-top: 16px;
+}
+
+.boardMembers {
+    width: 100%;
+    background: #1f460e;
+    color: #fff;
+}
+.boardMembers .container {
+    max-width: 70%;
+    padding: 0;
+}
+
+.boardMembers .secTitle {
+    margin-top: 35px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.boardMembers img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.boardMembers .title {
+    margin-top: 17px;
+    font-size: 12px;
+}
+
+.boardMembers .name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.boardMembers .bio {
+    font-size: 13px;
+    margin-top: 10px;
+    color: #c1c1c1;
+}
+.boardMembers .member:nth-child(2) {margin-left: -10px;}
+.history .secTitle {
+    color: #20450e;
+    font-size: 17px;
+    margin-top: 22px;
+    font-weight: bold;
+}
+
+.history {
+    width: 100%;
+    background: #4e962d;
+    color: #fff;
+}
+
+.history button.btn.btn-primary {
+    background: #20450e;
+    margin-top: 23px;
+    margin-bottom: 35px;
+}
+.history .container {
+    width: 70%;
+    padding: 0;
+}
+
+.history .content {
+    font-size: 14px;
+    margin-top: 20px;
 }
