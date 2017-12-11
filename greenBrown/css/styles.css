@@ -10,11 +10,18 @@ header{
     height: 100%;
     font-size: 14px;
     padding: 16px 26px;
+    color: #fff;
+    transition: color 0.5s ease;
 }
 
 .login i {
     font-size: 24px;
     margin-right: 8px;
+}
+
+.login:hover {
+    text-decoration: none;
+    color: #4d972c;
 }
 
 .navbar-toggler{display: none}
@@ -459,9 +466,148 @@ footer {
     top: 20%;
     color: #ffffff42;
 }
+.payments {
+    width: 63%;
+    margin: auto;
+    margin-top: 40px;
+    border-top: 2px solid #0c0c0c;
+    border-right: 2px solid #0c0c0c;
+}
+
+.userDetails{
+    width: 80%;
+    margin: auto;
+}
+.sp{color:#4e962d}
+.row.tableHead {
+    margin: 0;
+    border-bottom: 2px solid #0c0c0c;
+}
+
+.tableHead .paymentTitle {
+    padding-left: 0;
+    border-right: 2px solid #0c0c0c;
+    line-height: 34px;
+}
+
+.payments .search {
+    background: #eeeeee;
+}
+
+.payments .search input {
+    background: #eeeeee;
+    border: 0;
+    width: 83%;
+    font-style: italic;
+    float: left;
+    padding: 0;
+    height: 100%;
+    color: #787878;
+}
+
+.payments .search input:focus {
+    outline: none;
+}
+
+.payments .search i {
+    width: 17%;
+    background: #1f1e21;
+    height: 100%;
+    float: left;
+    display: block;
+    color: #fffaf8;
+    line-height: 31px;
+    text-align: center;
+}
+
+.payments .search {padding-right: 0;height: 36px;}
+
+.payments .paymentID {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 10px 0;
+    padding-left: 0;
+    /* border-right: 2px solid #4e962d; */
+}
 
 
+/*user details*/
+.userDetails .initials {
+    background: gainsboro;
+    width: 135px;
+    height: 135px;
+    margin: auto;
+    margin-top: 39px;
+    border-radius: 50%;
+    font-size: 60px;
+    line-height: 130px;
+    font-weight: bold;
+    color: #5c595a;
+}
+
+.userDetails .name {
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.userDetails .field {
+    margin-top: -8px;
+}
+.tableBody {
+    margin: 0;
+}
+
+.paymentId .id {
+    font-size: 12px;
+    margin-top: -7px;
+    color: #797979;
+    font-weight: normal;
+}
+.tableRow.row {
+    border-bottom: 1px solid #d1d1d1;
+    margin: 0;
+}
+.paymentStatus .status {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.paymentStatus .date {
+    font-size: 12px;
+    margin-top: -1px;
+    color: #797979;
+    font-weight: normal;
+}
+
+.payments .paymentStatus {
+    margin: 10px 0;
+    border-left: 2px solid #4e962d;
+}
+.payments .paymentStatus.red .status,.payments .paymentStatus.red .date {
+    color: #c34340;
+}
+.payments .paymentStatus.red {
+    border-color: #c34340;
+}
+.payments .contactUs {
+    text-align: right;
+    font-size: 15px;
+    color: #8b8b8b;
+}
+.payments .contactUs i {
+    color: #4e962d;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 29px;
+    text-align: center;
+    font-size: 22px;
+}
 /*media queries*/
+@media only screen and (max-width: 1024px) {
+    .payments{width:90%}
+}
 @media only screen and (max-width: 768px) {
 .navbar-toggler{display: block}
     #navbarNav.collapse{display: none}
@@ -534,4 +680,8 @@ input.emailField {
     flex-basis: auto;
 }
 .lang:before{display: none}
+.payments{width:80%}
+.payments .contactUs{
+    text-align: left
+}
 }
