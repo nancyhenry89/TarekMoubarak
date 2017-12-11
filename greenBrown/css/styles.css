@@ -102,6 +102,12 @@ nav.navbar {
     height: 329px;
     background-size: cover;
 }
+.internalBG{
+    background: url(../img/internalBG.png);
+    width: 100%;
+    height: 329px;
+    background-size: cover;   
+}
 .sectionTitle {
     font-size: 18px;
     color: rgb(22,9,9);
@@ -478,7 +484,7 @@ footer {
     width: 80%;
     margin: auto;
 }
-.sp{color:#4e962d}
+.sp{color: #4e962d;}
 .row.tableHead {
     margin: 0;
     border-bottom: 2px solid #0c0c0c;
@@ -604,6 +610,47 @@ footer {
     text-align: center;
     font-size: 22px;
 }
+.pdf.row {
+    width: 83%;
+    margin: auto;
+}
+.pdfItem {
+    margin: 20px 0;
+}
+.pdf .downloadIcon i {
+    line-height: 61px;
+}
+.pdf .openBox {
+    width: 32px;
+    height: 16px;
+    border: 5px solid;
+    border-top: 0;
+    margin: -26px auto;
+}
+.pdf .title {
+    font-weight: bold;
+    margin-top: 13px;
+}
+
+.pdf .subTitle {
+    font-size: 13px;
+}
+
+.pdf .content {
+    font-size: 14px;
+    margin-top: 16px;
+    padding: 0 20px;
+    color: #a3a3a3;
+}
+.pdf .downloadIcon {
+    text-align: center;
+    font-size: 42px;
+    border: 2px solid;
+    border-radius: 50%;
+    width: 80px;
+    margin: auto;
+    height: 80px;
+}
 /*media queries*/
 @media only screen and (max-width: 1024px) {
     .payments{width:90%}
@@ -683,5 +730,12 @@ input.emailField {
 .payments{width:80%}
 .payments .contactUs{
     text-align: left
+}
+.pdf .content {
+    padding: 0;
+}
+
+.pdf.row {
+    width: 95%;
 }
 }
