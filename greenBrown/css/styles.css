@@ -651,9 +651,67 @@ footer {
     margin: auto;
     height: 80px;
 }
+.container.events {
+    width: 66%;
+    margin-top: 36px;
+}
+
+.events .pageTitle {
+    font-weight: bold;
+    font-size: 17px;
+}
+.pager {
+    font-size: 13px;
+    color: #7e7e7e;
+    padding-right: 5%!important;
+    text-align: right
+}
+.pager i.active {
+    color: #1c1c1c;
+}
+
+
+.pager i {
+    font-size: 16px;
+    display: inline-block;
+}
+
+.pager span {
+    margin: 0px 10px;
+    display: inline-block;
+}
+.row.eventsList {
+    margin-top: 35px;
+}
+
+.eventsItem img {
+    width: 93%;
+}
+.eventsItem .date {
+    margin-top: 18px;
+    font-size: 13px;
+    color: #888888;
+}
+
+.eventsList .title {
+    font-weight: bold;
+}
+
+.eventsList .content {
+    font-size: 15px;
+    margin-top: 10px;
+    color: grey;
+    line-height: 17px;
+    width: 93%;
+    margin-bottom: 17px;
+}
+.eventsItem {
+    margin-bottom: 37px;
+}
 /*media queries*/
 @media only screen and (max-width: 1024px) {
     .payments{width:90%}
+    .container.events { width: 90%;}
 }
 @media only screen and (max-width: 768px) {
 .navbar-toggler{display: block}
@@ -737,5 +795,11 @@ input.emailField {
 
 .pdf.row {
     width: 95%;
+}
+}
+
+@media only screen and (max-width: 736px) {
+    .pager {
+    text-align: left;
 }
 }
