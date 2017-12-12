@@ -1,7 +1,4 @@
 $(document).ready(function(){
-
-$('#eventsSlider').carousel();
-$('membersSlider').carousel();
     $('#loginBtn').click(function(){
         $('#loginForm').fadeIn();
     });
@@ -10,6 +7,9 @@ $('membersSlider').carousel();
         $('#loginBtn').hide();
         $('#loggedIn').show();
     });
+$('#eventsSlider').carousel();
+$('membersSlider').carousel();
+
 var totalItems = jQuery('.slider .carousel-item').length;
   if(totalItems == 1){
         //one slide only
@@ -35,5 +35,6 @@ jQuery('.slider').on('slid.bs.carousel', function(){
     }
 
 });
+
 });
 
