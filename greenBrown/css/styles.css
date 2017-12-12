@@ -99,6 +99,10 @@ div#loginForm {
     margin-top: 20px;
 }
 .navbar-toggler{display: none}
+nav.navbar-dark .navbar-toggler {
+    background: #4d972c;
+    border: 1px solid #fff;
+}
 #navbarNav{display: block}
 .navbar a {
     color: #fff;
