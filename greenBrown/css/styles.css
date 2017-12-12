@@ -4,6 +4,9 @@ header{
     background-color: #4d972c;
     color: #fff;
 }
+.container-fluid{
+    padding: 0;
+}
 .hide{display: none}
 .login {
     width: 168px;
