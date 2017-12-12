@@ -102,6 +102,12 @@ nav.navbar {
     height: 329px;
     background-size: cover;
 }
+.directoryBG{
+    background: url(../img/directoryBG.png);
+    width: 100%;
+    height: 329px;
+    background-size: cover;  
+}
 .applicationBG{
     background: url(../img/applicationBG.png);
     width: 100%;
@@ -713,6 +719,51 @@ footer {
 }
 .eventsItem {
     margin-bottom: 37px;
+}
+.directory .userDetails .initials {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-top: 9px;
+    font-size: 15px;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 10px;
+    color: #656163;
+}
+
+.directory .userDetails a {
+    float: right;
+    display: block;
+    color: #5c8542;
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    font-size: 24px;
+    margin-top: -14px;
+}
+
+.directory .userDetails .name {
+    float: left;
+    width: calc(100% - 90px);
+    font-size: 13px;
+    margin-top: 16px;
+}
+
+.directory .userDetails .field {
+    float: left;
+    font-size: 12px;
+    color: #919191;
+    margin-top: 1px;
+}
+
+.directory .userDetails:first-of-type {
+    border-right: 2px solid;
+}
+
+.directory .userDetails {
+    margin: 0;
+    padding: 0 20px;
 }
 /*media queries*/
 @media only screen and (max-width: 1024px) {
