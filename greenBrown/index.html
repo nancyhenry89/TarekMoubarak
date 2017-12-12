@@ -15,10 +15,29 @@
     <div class="row">
         <header>
             <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo"/></a>
-            <a href="user_area.html" class="login pull-right">
+            <a id="loggedIn" href="user_area.html" class="login pull-right hide">
                 <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                 <span>Hello Tarek!</span>
             </a>
+            <a id="loginBtn" href="#" class="login pull-right">
+                <i class="fa fa-sign-in" aria-hidden="true"></i>
+                <span>Login</span>
+            </a>
+            <div id="loginForm" class="hide">
+                <div class="content text-center">
+                    <div class="title">Sign Up</div>
+                    <form>
+                        <input type="text" placeholder="Full Name" name="FullName"/>
+                        <input type="text" placeholder="Email" name="Email"/>
+                        <input type="password" placeholder="Password" name="Password"/>
+                        <input type="password" placeholder="Confirm Password" name="Confirm Password"/>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </form>
+                    <div class="info">Aleady have and account?</div>
+                    <div class="info">Then <b>Sign In</b> below</div>
+                    <button type="button" class="btn btn-primary dark">SIGN IN</button>
+                </div>
+            </div>
             <div class="lang pull-right">
                 <a href="#" class="active">EN</a> | <a href="#">AR</a>
             </div>
