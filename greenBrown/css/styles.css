@@ -550,14 +550,23 @@ footer {
     right: -100px;
     font-size: 50px;
     top: 20%;
-    color: #fff;
+
+}
+.slider a{color:#ffffff42;}
+
+.slider a:hover {
+    color: #ffffff42;
+}
+.slider a.active{color:#fff;transition: color 0.5s ease;}
+
+.slider a.active:hover {
+    color: #4d972b;
 }
 .slider a#prev {
     position: absolute;
     left: -100px;
     font-size: 50px;
     top: 20%;
-    color: #ffffff42;
 }
 .payments {
     width: 63%;
@@ -969,7 +978,12 @@ input.emailField {
 .contactUs form {
     width: 90%;
 }
-.slider a#prev,.slider a#next{display: none}
+.slider a#prev{
+    left: -35px;
+}
+.slider a#next{
+    right: -25px;
+}
 .boardMembers .member {
     width: calc(100% - 0px);
     margin: 0;
@@ -1005,4 +1019,18 @@ input.emailField {
 .eventsGallery .galItem img {
     max-height: -webkit-fill-available;
 }
+}
+a.left.carousel-control {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+}
+
+a.right.carousel-control {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    float: right;
 }
