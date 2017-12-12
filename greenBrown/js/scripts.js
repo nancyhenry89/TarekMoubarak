@@ -1,7 +1,7 @@
 $(document).ready(function(){
-    $('#carousel-example-generic').carousel({wrap: true});
 
 $('#eventsSlider').carousel();
+$('membersSlider').carousel();
     $('#loginBtn').click(function(){
         $('#loginForm').fadeIn();
     });
@@ -10,21 +10,28 @@ $('#eventsSlider').carousel();
         $('#loginBtn').hide();
         $('#loggedIn').show();
     });
-jQuery('#eventsSlider').on('slid.bs.carousel', function(){
-    var totalItems = jQuery('#eventsSlider .carousel-item').length;
-    var currentIndex = jQuery('#eventsSlider .carousel-item.active').index() + 1;
+var totalItems = jQuery('.slider .carousel-item').length;
+  if(totalItems == 1){
+        //one slide only
+        $('.slider a').hide();
+
+    }
+jQuery('.slider').on('slid.bs.carousel', function(){
+    var totalItems = jQuery('.slider .carousel-item').length;
+    var currentIndex = jQuery('.slider .carousel-item.active').index() + 1;
         if(totalItems == currentIndex){
             //last slide
-        $('#eventsSlider #next').removeClass('active');
-        $('#eventsSlider #prev').addClass('active');
+        $('.slider #next').removeClass('active');
+        $('.slider #prev').addClass('active');
     } else if(currentIndex == 1){
         //first slide
-        $('#eventsSlider #next').addClass('active')
-        $('#eventsSlider #prev').removeClass('active')
-    }else{
+        $('.slider #next').addClass('active')
+        $('.slider #prev').removeClass('active')
+    }
+    else{
         //middle slides
-        $('#eventsSlider #next').addClass('active');
-        $('#eventsSlider #prev').addClass('active');
+        $('.slider #next').addClass('active');
+        $('.slider #prev').addClass('active');
     }
 
 });
