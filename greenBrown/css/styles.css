@@ -164,9 +164,28 @@ nav.navbar {
 }
 
 .logo {
-    width: 87px;
+    width: 81px;
     padding-left: 20px;
-    padding-top: 13px;
+    /* padding-top: 7px; */
+    float: left;
+}
+.logoContainer div {
+    float: left;
+    width: 145px;
+    text-align: center;
+}
+
+a.logoContainer {
+    width: 300px;
+    display: inline-block;
+    color: #fff;
+    font-size: 11px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+a.logoContainer:hover {
+    color: #fff;
 }
 .nav.navbar-nav {
     display: block;
