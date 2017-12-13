@@ -3,13 +3,19 @@ header{
     height: 64px;
     background-color: #4d972c;
     color: #fff;
+    padding-left: 15px;
 }
 body.container-fluid {
     padding: 0;
 }
+body .row {
+    max-width: 100%;
+    margin: 0;
+}
 
 body .container {
     max-width: 100%;
+    padding: 0;
 }
 body{
     font-family: 'Raleway', sans-serif!important;
@@ -973,6 +979,10 @@ div#mCSB_1_scrollbar_vertical {
 }
 .login {width: auto;padding: 20px 13px;text-align: center;}
 
+header {
+    padding-left:0
+}
+
 .login span {
     display: none;
 }
@@ -1062,6 +1072,22 @@ input.emailField {
 div#mCSB_1_scrollbar_vertical {
     left: 90%;
 }
+nav.navbar {
+    position: relative;
+    left: 0;
+    width: 100%;
+    float: left;
+}
+a.logoContainer {
+    width: 200px;
+}
+
+.logo {
+    padding-left: 0;
+    width: 55px;
+}
+
+.logo img {}
 }
 
 @media only screen and (max-width: 736px) {
@@ -1073,18 +1099,7 @@ div#mCSB_1_scrollbar_vertical {
 .eventsGallery .galItem img {
     max-height: -webkit-fill-available;
 }
+nav.navbar{
+    left: 0;
 }
-a.left.carousel-control {
-    display: block;
-    width: 50px;
-    height: 50px;
-    background: #fff;
-}
-
-a.right.carousel-control {
-    display: block;
-    width: 50px;
-    height: 50px;
-    background: #fff;
-    float: right;
 }
