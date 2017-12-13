@@ -697,7 +697,7 @@ footer {
 .userDetails .field {
     margin-top: -8px;
 }
-.tableBody {
+.directory .tableBody {
     margin: 0;
     height: 360px;
     overflow: auto;
