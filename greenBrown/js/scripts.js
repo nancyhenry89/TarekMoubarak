@@ -7,6 +7,9 @@ $(document).ready(function(){
         $('#loginBtn').hide();
         $('#loggedIn').show();
     });
+    $(".closeBtn").click(function(){
+        $('#loginForm').fadeOut();
+    });
 $('#eventsSlider').carousel();
 $('membersSlider').carousel();
 
