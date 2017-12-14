@@ -139,7 +139,11 @@ div#loginForm {
 .navbar-toggler{display: none}
 nav.navbar-dark .navbar-toggler {
     background: #4d972c;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
+}
+
+button.navbar-toggler:focus {
+    outline: none;
 }
 #navbarNav{display: block}
 .navbar a {
@@ -995,11 +999,27 @@ div#mCSB_1_scrollbar_vertical {
 
 .navbar-toggler{display: block}
     #navbarNav.collapse{display: none}
+.navbar-collapse.collapsing {
+  -webkit-transition: height 0.01s;
+  -moz-transition: height 0.01s;
+  -ms-transition: height 0.01s;
+  -o-transition: height 0.01s;
+  transition: height 0.01s;
 
+}
 #navbarNav.collapse.show {
     display: block;
+    width: 310px;
+    position: absolute;
+    left: -250px;
+    top: 64px;
+    -webkit-transition: height 0.01s;
+    -moz-transition: height 0.01s;
+    -ms-transition: height 0.01s;
+    -o-transition: height 0.01s;
+    transition: height 0.01s;
 }
-.login {width: auto;padding: 20px 13px;text-align: center;}
+.login {width: auto;padding: 20px 13px;text-align: center;margin-right: 55px;}
 
 header {
     padding-left:0
@@ -1034,8 +1054,8 @@ li.nav-item {
 }
 
 nav.navbar {
-    width: 100%;
-    position: relative;
+    /* width: 100%; */
+    /* position: relative; */
     padding: 0;
 }    
 .newsLetter .content {
@@ -1096,10 +1116,11 @@ div#mCSB_1_scrollbar_vertical {
     left: 90%;
 }
 nav.navbar {
-    position: relative;
-    left: 0;
-    width: 100%;
-    float: left;
+    position: absolute;
+    right: 0px;
+    width: 54px;
+    top: 0px;
+    height: 66px;
 }
 a.logoContainer {
     width: 200px;
@@ -1122,7 +1143,5 @@ a.logoContainer {
 .eventsGallery .galItem img {
     max-height: -webkit-fill-available;
 }
-nav.navbar{
-    left: 0;
-}
+
 }
